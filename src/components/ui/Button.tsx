@@ -19,8 +19,15 @@ export const Button = ({
   const className = `button ${variant}`
 
   if (href) {
+    const isExternal = href.startsWith('http')
+
     return (
-      <a href={href} className={className}>
+      <a 
+      href={href} 
+      className={className}
+      target={isExternal ? '_blank' : '_self'}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
+      >
         {children}
       </a>
     )
@@ -28,7 +35,7 @@ export const Button = ({
 
   return (
     <button className={className} onClick={onClick}>
-      {children}
+      {children} ↗
     </button>
   )
 }

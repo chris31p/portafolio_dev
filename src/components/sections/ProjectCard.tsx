@@ -17,12 +17,12 @@ export const ProjectCard = ({ project }: Props) => {
           <div className="project-links">
             {project.demoUrl && (
               <Button href={project.demoUrl} variant="outline">
-                Demo
+                Demo ↗
               </Button>
             )}
             {project.repoUrl && (
               <Button href={project.repoUrl} variant="secondary">
-                Código
+                Código ↗
               </Button>
             )}
           </div>

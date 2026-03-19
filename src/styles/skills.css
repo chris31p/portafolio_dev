@@ -59,6 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
+  margin-top: 14px;
 }
 
 /* ===== SKILL CHIP ===== */
