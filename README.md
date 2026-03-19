@@ -1,17 +1,79 @@
-# Portfolio - Christopher Pesántez
+# 🚀 Portafolio Web - Christopher Pesantez
 
-Fullstack developer portfolio built with React.
+Este proyecto es un portafolio web desarrollado para presentar mis habilidades como desarrollador, mis proyectos y mi experiencia técnica.
 
-## Tech Stack
+## 🧑‍💻 Sobre el proyecto
 
-- React
-- CSS
-- Vite
-- Responsive Design
+Este portafolio fue construido con el objetivo de:
 
-## Features
+* Mostrar proyectos reales desarrollados
+* Presentar habilidades técnicas como fullstack
+* Tener una presencia profesional en línea
 
-- Responsive layout
-- Interactive hero section
-- Project showcase
-- Contact section
+## 🛠️ Tecnologías utilizadas
+
+* React
+* TypeScript
+* Vite
+* HTML5
+* CSS3
+
+## 📁 Estructura del proyecto
+
+```bash
+src/
+ ├── components/   # Componentes reutilizables
+ ├── pages/        # Vistas principales
+ ├── assets/       # Imágenes y/o recursos
+ ├── styles/       # Estilos globales e individuales
+ └── main.tsx      # Punto de entrada
+```
+
+## ⚙️ Instalación y ejecución
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/chris31p/portafolio_dev.git
+```
+
+Instala dependencias:
+
+```bash
+npm install
+```
+
+Ejecuta el proyecto:
+
+```bash
+npm run dev
+```
+
+## 📦 Build para producción
+
+```bash
+npm run build
+```
+
+## 🌐 Deploy
+
+Este proyecto está desplegado en:
+
+👉 (Aquí pondrás el link cuando lo tengas en Vercel o Netlify)
+
+## 📸 Preview
+
+(Aquí puedes agregar screenshots del portafolio)
+
+## 📌 Estado del proyecto
+
+🟢 En desarrollo — mejoras continuas en diseño y funcionalidades.
+
+## 📬 Contacto
+
+* GitHub: https://github.com/chris31p
+* LinkedIn: (tu linkedin aquí)
+
+---
+
+⭐ Si te gusta el proyecto, puedes darle una estrella al repositorio, te lo agradecería.
