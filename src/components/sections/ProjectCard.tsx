@@ -31,8 +31,8 @@ export const ProjectCard = ({ project }: Props) => {
 
       <div className="project-content">
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
-            
+        <p style={{ whiteSpace: 'pre-line' }}>{project.description}</p>
+        <p>Rol: <span className="project-role">{project.role}</span></p> 
         <Stack label="Backend" items={project.backend} highlight />
         {project.database && <Stack label="DB" items={project.database} />}
         {project.auth && <Stack label="Auth" items={project.auth} />}

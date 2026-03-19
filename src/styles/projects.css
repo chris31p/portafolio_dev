@@ -109,6 +109,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-top: 5px;
 }
 
 .project-tag {
@@ -118,6 +119,15 @@
   background: rgba(56, 189, 248, 0.15);
   color: var(--color-primary);
   white-space: nowrap;
+  
+}
+
+.project-role {
+  font-size: 0.9rem;
+  opacity: 0.3;
+  font-style: italic;
+  display: block;
+  margin-bottom: 8px;
 }
 
 /* ===== TABLET ===== */

@@ -3,7 +3,7 @@ export type Project = {
   title: string
   description: string
   image: string
-
+  role: string
   backend: string[]
   frontend?: string[]
   database?: string[]
