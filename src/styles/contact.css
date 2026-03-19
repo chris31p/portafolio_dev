@@ -1,0 +1,71 @@
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 8rem 0;
+  position: relative;
+}
+
+/* Card central */
+.contact-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3.5rem 3rem;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(56, 189, 248, 0.08);
+
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+/* Glow sutil inferior */
+.contact-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(56, 189, 248, 0.15),
+    rgba(99, 102, 241, 0.08)
+  );
+  opacity: 0.3;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+/* TITULO */
+.contact-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* TEXTO */
+.contact-content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #b8c5d1;
+}
+
+/* DISPONIBILIDAD */
+.contact-availability {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+}
+
+/* BOTONES */
+.contact-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

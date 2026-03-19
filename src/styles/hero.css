@@ -1,0 +1,195 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 120px; /* Compensa navbar fixed */
+  padding-bottom: 80px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+}
+
+/* heading spacing */
+.hero-content h1 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* paragraph */
+.hero-content p {
+  margin-top: 1rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* span */
+.hero h1 span {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================
+   IMAGE WRAPPER
+========================= */
+
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 320px; /* evita que el diamond empuje el layout */
+}
+
+/* Diamond background */
+.hero-image::before {
+  content: "";
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  background: linear-gradient(135deg, #0f1b32, #1a3768);
+  border-radius: 30px;
+
+  z-index: 0;
+  opacity: 0.9;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  animation: diamondFloat 4s ease-in-out infinite alternate;
+}
+
+/* Glow border */
+.hero-image::after {
+  content: "";
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  border-radius: 30px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+
+  z-index: 0;
+}
+
+/* Profile image */
+.hero-image img {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 24px;
+  object-fit: cover;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  animation: slideInRight 1s ease-out;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+  .hero-content {
+    max-width: 480px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    align-items: center;
+    max-width: 520px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-image {
+    min-height: 240px;
+  }
+
+  .hero-image::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-image::after {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-image img {
+    max-width: 170px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+
+}
+
+@keyframes diamondFloat {
+  from {
+    transform: translate(-50%, -50%) rotate(45deg) translateY(0px);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(45deg) translateY(-10px);
+  }
+}

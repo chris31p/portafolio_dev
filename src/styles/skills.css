@@ -1,0 +1,120 @@
+/* ===== SECTION BASE ===== */
+.section {
+  padding: 3.5rem 0;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills section {
+  padding: 4rem 0;
+}
+
+/* ===== CONTAINER ===== */
+.skills__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== TITLES ===== */
+.skills h2 {
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skills__subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin-bottom: 3rem;
+}
+
+/* ===== GROUPS GRID ===== */
+.skills__groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* ===== SKILL GROUP CARD ===== */
+.skills__group {
+  padding: 2rem;
+  border-radius: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skills__group:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Highlight principal (Backend core) */
+.skills__group.highlight {
+  border: 2px solid var(--color-primary);
+}
+
+/* ===== SKILLS LIST ===== */
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* ===== SKILL CHIP ===== */
+.skill {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .skills {
+    padding: 3.5rem 0;
+  }
+
+  .skills__groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .skills {
+    padding: 3rem 0;
+  }
+
+  .skills__subtitle {
+    margin-bottom: 2.5rem;
+  }
+
+  .skills__groups {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skills__group {
+    padding: 1.5rem;
+  }
+}
+
+/* ===== SMALL MOBILE (iPhone SE) ===== */
+@media (max-width: 360px) {
+  .skills h2 {
+    font-size: 1.6rem;
+  }
+
+  .skill {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
