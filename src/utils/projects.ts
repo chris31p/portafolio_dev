@@ -32,7 +32,7 @@ export const projects: Project[] = [
     other: ['Stripe'],
 
     demoUrl: 'https://apigreenmarket.netlify.app/',
-    repoUrl: 'https://github.com/chris31p/backend_AppECommerce'
+    repoUrl: 'https://github.com/chris31p/suscriptionAPI_client'
   },
   {
     id: 'scalalearning',
