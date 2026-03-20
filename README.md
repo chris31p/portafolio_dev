@@ -57,13 +57,14 @@ npm run build
 
 ## 🌐 Deploy
 
-Este proyecto está desplegado en:
+Este proyecto está desplegado en Vercel:
 
-👉 (Aquí pondrás el link cuando lo tengas en Vercel o Netlify)
+👉 (https://portafolio-pesantezdev.vercel.app/)
 
 ## 📸 Preview
 
-(Aquí puedes agregar screenshots del portafolio)
+<img width="1886" height="942" alt="image" src="https://github.com/user-attachments/assets/109309d3-38e4-4541-b4f6-a88b824d62a6" />
+
 
 ## 📌 Estado del proyecto
 
@@ -72,7 +73,6 @@ Este proyecto está desplegado en:
 ## 📬 Contacto
 
 * GitHub: https://github.com/chris31p
-* LinkedIn: (tu linkedin aquí)
 
 ---
 
